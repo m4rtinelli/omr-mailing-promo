@@ -30,7 +30,7 @@
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: inherit !important;
   }
 
   /*  */
@@ -134,7 +134,7 @@
 
   /* Download button */
   .dl-button a {
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: "Courier Prime", monospace;
     font-weight: normal;
     padding: 7px 30px;
@@ -159,12 +159,15 @@
 
   /* footer */
   .footer-wrapper {
-    justify-content: space-around;
-    display: flex;
-
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact {
+    border-right: 1px solid #ffffff;
     color: #ffffff;
     display: grid;
     row-gap: 8px;
@@ -233,7 +236,7 @@
 
       <br>
 
-      <p> To purchase a copy of our CD please visit our <a href="https://outermost.bandcamp.com/" target="_blank">Bandcamp page.</a>
+      <p> To purchase a copy of our CD please visit our <a class="bc" href="https://outermost.bandcamp.com/" target="_blank">Bandcamp page.</a>
       </p>
 
       <br>
@@ -251,6 +254,9 @@
       <p class="label-info">
         If you are not interest in receiveing promos in furter releases please respond to this e-mail with i'm not interested and we will remove you from our mailing.
       </p>
+
+      <p>Best regards, <br>
+        OMR Team.</p>
 
       <div class="dl-button">
         <a href="https://promo.fatdrop.co.uk/e/3597253249990HKbVYTtRlURzLnpsWzMboY1xkojhNikD?verify=wGYCRc4UMA" target="_blank">Download</a>
